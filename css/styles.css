@@ -12,7 +12,7 @@
   --overlay: rgba(47, 48, 58, 0.4);
 }
 
-* {
+ * {
   outline: 1px solid tomato;
 }
 
@@ -73,7 +73,8 @@ body {
 .team-list,
 .progects-type-list,
 .projects-list, 
-.footer-contacts {
+.footer-contacts,
+.clients-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -99,7 +100,6 @@ body {
   text-decoration: none;
   color: var(--titles-color);
   letter-spacing: 0.02em;
-
 }
 
 .nav-list-link:hover,
@@ -181,6 +181,7 @@ body {
 .features {
 padding-top: 94px;
 padding-bottom: 94px;
+
 }
 
 .features-list {
@@ -197,7 +198,9 @@ padding-bottom: 94px;
   margin-right: 0;
 }
 
-.features-icon {
+.features-item::before {
+  display: block;
+  content: "";
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--team-buttons-bg-color);
@@ -205,39 +208,24 @@ padding-bottom: 94px;
   background-size: 70px 70px;
   background-repeat: no-repeat;
 }
-.antenna{
+
+.features-item:nth-child(1)::before {
   background-image: url('../img/antenna.svg');
 }
 
-.clock{
+.features-item:nth-child(2)::before {
   background-image: url('../img/clock.svg');
 }
 
-.diagram{
+.features-item:nth-child(3)::before {
   background-image: url('../img/diagram.svg');
 }
 
-.astronaut{
+.features-item:nth-child(4)::before {
   background-image: url('../img/astronaut.svg');
 }
 
 
-.features-list .features-icon:nth-child(2) {
-  background-color: var(--team-buttons-bg-color);
-  background-image: url('../img/clock.svg');
-  background-position: center;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-}
-
-
-.features-icon:nth-child(3) {
-  background-color: var(--team-buttons-bg-color);
-}
-
-.features-icon:nth-child(4) {
-  background-color: var(--team-buttons-bg-color);
-}
 
 .features-item-title {
   margin-top: 0;
@@ -260,20 +248,22 @@ padding-bottom: 94px;
 
 .occupation {
   padding-bottom: 94px;
+  text-align: center;
 }
 
-.occupation-title {
+.section-title {
+  display: inline-block;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 50px;  
   margin-right: auto;
   margin-left: auto;
-  max-width: calc((100% - 3 * 14px) / 3);
 
   font-size: 36px;
   font-weight: 700;
   color: var(--titles-color);
   text-align: center;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .occupation-list {
@@ -302,19 +292,6 @@ padding-bottom: 94px;
   background-color: var(--team-buttons-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.team-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: calc((100% - 3 * 14px) / 3);
-  
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
-  color: var(--titles-color);
   text-align: center;
 }
 
@@ -365,6 +342,12 @@ padding-bottom: 94px;
   font-size: 16px;
   line-height: 1.1875;
   color: var(--description-header-link-color);
+}
+
+.clients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  text-align: center;
 }
 
 .page-footer {
