@@ -2,12 +2,14 @@
   --main-color: #ffffff;
   --titles-color: #212121;
   --team-buttons-bg-color: #f5f4fa;
-  --footer-hero-bg-color: #2f303a;
+  --footer-bg-color: #2f303a;
   --hover-focus-logo-button-color: #2196f3;
   --site-logo-text-color: #000;
   --description-header-link-color: #757575;
   --border-color: #EEEEEE;
   --header-border-color: #ECECEC;
+  --hero-bg-color: #C4C4C4;
+  --overlay: rgba(47, 48, 58, 0.4);
 }
 
 * {
@@ -129,11 +131,18 @@ body {
 }
 
 .hero {
-  background-color: var(--footer-hero-bg-color);
-  
-  text-align: center;
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  
+  text-align: center;
+  
+  background-color: var(--hero-bg-color); 
+  background-image: linear-gradient(to right,var(--overlay),var(--overlay)), url('../img/hero-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -362,7 +371,7 @@ padding-bottom: 94px;
   padding: 60px 0px;
 
   color: var(--main-color);
-  background-color: var(--footer-hero-bg-color);
+  background-color: var(--footer-bg-color);
   font-size: 0;
 }
 
