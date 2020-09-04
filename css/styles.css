@@ -371,6 +371,7 @@ padding-bottom: 94px;
   display: flex;
   justify-content: center;
 }
+
 .social-item {
   font-size: 0;
 }
@@ -490,20 +491,18 @@ padding-bottom: 94px;
   font-size: 0;
 }
 
-.flex-footer {
-display: flex;
+.page-footer > .container {
+ display: flex;
+ align-items: flex-start;
 }
 
-.flex-footer-contacts {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-footer > .flex-footer-contacts {
+.footer-contacts {
   margin-right: 70px;
+  width: 231px;
 }
 
 .page-footer .site-logo {
+  display: block;
   margin-right: 0;
   margin-bottom: 20px;
 
@@ -511,7 +510,6 @@ display: flex;
 }
 
 .address {
-  width: 231px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
@@ -519,24 +517,27 @@ display: flex;
 
 
 .footer-contacts-link {
+  display: block;
   margin-top: 9px;
-  
   font-weight: 400;
   text-decoration: none;
   color: var(--main-color);
   opacity: 0.6;
 }
 
-.join {
-  display: inline-block;
+
+.join-text {
+display: block;
 margin-top: 0;
 margin-bottom: 20px;
 
 font-size: 14px;
+font-weight: 700;
 line-height: 1.143;
 text-transform: uppercase;
 color: var(--main-color);
 }
+
 
 .join-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -545,10 +546,6 @@ color: var(--main-color);
 
 .join-link > .social-link-icon {
   fill: var(--main-color);
-}
-
-.join-item {
-  display: flex;
 }
 
 /*стили отдельных елементов страници portfolio.html*/
