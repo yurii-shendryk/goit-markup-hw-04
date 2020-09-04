@@ -587,6 +587,7 @@ color: var(--main-color);
 .progects-type-item-button:focus {
   background-color: var(--active-color);
   color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
@@ -603,7 +604,7 @@ color: var(--main-color);
   flex-basis: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
+  
 
   border: 1px solid var(--border-color);
 }
@@ -616,6 +617,18 @@ color: var(--main-color);
   margin-bottom: 0;
 }
 
+
+.projects-link {
+  text-decoration: none;
+}
+
+
+
+.project-card:hover,
+.projects-card:focus {
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .projects-posters {
   display: block;
   max-width: 100%;
@@ -626,7 +639,9 @@ color: var(--main-color);
 .project-title-container{
   margin-right: 24px;
   margin-left: 24px;    
+  padding-bottom: 20px;
 }
+
 
 .projects-list-item-title {
   margin-top: 0;
